@@ -7,6 +7,8 @@
 <title>Contact</title>
 </head>
 <body>
+<%@ include file = "menu.jsp" %>
+<br>
 
 <h1>
 	Ceci est ma page Contact

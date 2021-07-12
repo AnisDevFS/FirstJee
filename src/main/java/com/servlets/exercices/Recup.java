@@ -33,6 +33,10 @@ public class Recup extends HttpServlet {
 		Character.isUpperCase(password.charAt(0)) ? true : false;
 		request.setAttribute("firstCharMaj", firstCharMaj);
 		
+		String[] tab = {"Alexis" , "Jeremy" , "Cathy"};
+		
+		request.setAttribute("tabStagiaires", tab);
+		
 		request.getRequestDispatcher("WEB-INF/recup.jsp").forward(request, response);
 	}
 

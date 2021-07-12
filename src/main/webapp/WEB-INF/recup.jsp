@@ -18,12 +18,14 @@
 </style>
 </head>
 <body>
+<%@ include file = "menu.jsp" %>
+<br>
 
 	<h1>Bienvenue</h1>
 	
 	<h2>Email : ${ adresse }</h2>
 	
-	
+	<h2>Email : ${ tabStagiaires[0] }</h2>
 <%-- 	<h2 style= "color : ${ Character.isUpperCase(motDePasse.charAt(0)) ? "green" : "red" }"> --%>
 	<%-- <h2 style= "color : ${ firstCharMaj ? "green" : "red" }"> --%>
 	<h2 class= "${ firstCharMaj ? "vert" : "rouge" }">
