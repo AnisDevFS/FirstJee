@@ -1,5 +1,5 @@
-<%@ include file = "menu.jsp" %>
-<br>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,7 +12,7 @@
 	<h1>Ceci est ma premiere page ${ leNom }</h1>
 	<h1>
 		<%
-		String s = "Chaine à afficher <br>";
+		String s = "Chaine Ã  afficher <br>";
 		out.print(s);
 		for (int i = 0 ; i < 4 ; i++) {
 			out.print("ligne num " + i + "<br>");
