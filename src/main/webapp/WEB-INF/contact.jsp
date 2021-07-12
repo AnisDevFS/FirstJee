@@ -11,6 +11,5 @@
 <h1>
 	Ceci est ma page Contact
 </h1>
-
 </body>
 </html>
