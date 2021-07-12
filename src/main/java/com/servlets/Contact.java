@@ -8,17 +8,19 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-/**
- * Servlet implementation class Test
- */
-@WebServlet("/")
-public class Test extends HttpServlet {
-	private static final long serialVersionUID = 1L;
 
+/**
+ * Servlet implementation class Contact
+ */
+@WebServlet("/contact")
+public class Contact extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
     /**
-     * Default constructor. 
+     * @see HttpServlet#HttpServlet()
      */
-    public Test() {
+    public Contact() {
+        super();
         // TODO Auto-generated constructor stub
     }
 
@@ -28,9 +30,9 @@ public class Test extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 //		response.getWriter().append("Served at: ").append(request.getContextPath());
-		String nom = "Alexis";
-		request.setAttribute("leNom", nom);
-		request.getRequestDispatcher( "/WEB-INF/index.jsp" ).forward( request, response );
+
+		request.getRequestDispatcher( "/WEB-INF/contact.jsp" ).forward( request, response );
+
 	}
 
 	/**
