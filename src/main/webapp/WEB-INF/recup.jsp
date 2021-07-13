@@ -7,14 +7,8 @@
 <title>Recup</title>
 <%-- <link rel="stylesheet" type="text/css" href="#{ css/style.css}"> --%>
 
-<style>
-.rouge {
-	color : red;
-}
-
-.vert {
-	color : green;
-}
+<style type="text/css">
+<%@ include file = "css/style.css" %>
 </style>
 </head>
 <body>

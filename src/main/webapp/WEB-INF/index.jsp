@@ -5,6 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Titre de la page</title>
+
 </head>
 <body>
 <%@ include file = "menu.jsp" %>
