@@ -3,6 +3,7 @@ package com.servlets;
 import java.io.IOException;
 
 import com.beans.User;
+import com.beans.Voiture;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -31,10 +32,13 @@ public class AfficheUserDynamicName extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		System.out.println("Je suis dans la doGet");
-		User alexis = new User("Alexis", "alex@pop.fr", 25);
+		User alexis = new User("Alexis", "alex@pop.fr", 25 , null);
 		String newName = request.getParameter("name");
 		alexis.setNom(newName);
 		alexis.setEmail(request.getParameter("mail"));
+		
+		Voiture bmw = new Voiture("BMW Serie 1", "noir");
+		alexis.setVoiture(bmw);
 		request.setAttribute("myUser", alexis);
 		request.getRequestDispatcher("/WEB-INF/user.jsp").forward(request, response);
 		}

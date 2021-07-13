@@ -2,20 +2,32 @@ package com.beans;
 
 public class User {
 
+
+
 	private String nom;
 	private String email;
 	private int age;
+	private Voiture voiture;
 
 	public User() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public User(String nom, String email, int age) {
+	public User(String nom, String email, int age, Voiture voiture) {
 		super();
 		this.nom = nom;
 		this.email = email;
 		this.age = age;
+		this.voiture = voiture;
+	}
+
+	public Voiture getVoiture() {
+		return voiture;
+	}
+
+	public void setVoiture(Voiture voiture) {
+		this.voiture = voiture;
 	}
 
 	public String getNom() {
